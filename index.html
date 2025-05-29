@@ -443,6 +443,61 @@
             font-size: 50px;
             margin-bottom: 50px;
         }
+        .contact{
+            display:flex;
+            padding: 50px;
+        }
+        .contact-page{
+            width: 400px;
+            padding: 50px;
+        }
+        .contact-page h3{
+            font-size: 40px;
+        }
+        .contact-page p{
+            font-size: 18px;
+        }
+        .personal-info{
+            display:flex;
+            
+            
+            flex-wrap: wrap;
+        }
+        .personal-info li{
+            list-style: none;
+            gap:10px;
+            padding: 30px;
+
+        }
+        .personal-info input[type="text"],
+        .personal-info input[type="tel"],
+        .personal-info input[type="email"], 
+        .personal-info input[type="text"]{
+            width: 200px;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 10px;
+            border-bottom: 2px solid #ccc;
+            
+            
+        }
+        .message input[type="text"]{
+            width: 200px;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 10px;
+            border-bottom: 2px solid #ccc;
+            
+
+        }
+        .message{
+            padding: 30px;
+            margin-left:50px;
+            width: 100%;
+            height: 100px;
+        }
      
         
 
@@ -735,32 +790,29 @@
              
             <div class="contact">
                 <div class="contact-page">
-                    <p style="color:#FF014F">GET IN TOUCH</p>
+                    <p style="color:#FF014F"><b>GET IN TOUCH</b></p>
                     <h3>Elevate your brand with Me</h3>
-                    <p>ished fact that a reader will be distrol acted bioiiy desig ished fact that a reader will acted ished fact that a reader will be distrol acted</p>
+                    <p><b>ished fact that a reader will be distrol acted bioiiy desig ished fact that a reader will acted ished fact that a reader will be distrol acted</b></p>
                 </div>
                 <div class="contact-form">
                     <form action="">
                         <ul class="personal-info">
                             <li>
-                                <label for="">Your Name</label>
-                                <input type="text" name="" id="">
+                                <input type="text" placeholder="Name" />
                             </li>
                             <li>
-                                <label for="">Phone</label>
-                                <input type="tel" name="" id="">
+                                <input type="tel" placeholder="Phone Number" />
                             </li>
                             <li>
-                                <label for="">Email</label>
-                                <input type="email" name="" id="">
+                                <input type="email" placeholder="Email" />
                             </li>
                             <li>
-                                <label for="">Subject</label>
-                                <input type="text" name="" id="">
+                                <input type="text" placeholder="Subject" />
                             </li>
-                            <li></li>
-                            <li></li>
                         </ul>
+                        <div class="message">
+                            <input type="text" placeholder="your message" />
+                        </div>
                     </form>
                 </div>
             </div>
