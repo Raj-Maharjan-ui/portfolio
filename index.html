@@ -187,6 +187,7 @@
         button:hover {
             display: flex;
             flex-direction:row-reverse;
+            justify-content: center;
         
             
         }
@@ -429,6 +430,9 @@
         }
         .blogs:hover h6{
             text-decoration:underline;
+            
+        }
+        .blogs h6:hover{
             color:#FF014F;
         }
         .blogs a{
@@ -437,7 +441,7 @@
             padding:20px;
         }
         .blogs a:hover{
-            color:#FB6392;
+            color:#FF014F;
         }
         .news h3{
             font-size: 50px;
@@ -446,6 +450,11 @@
         .contact{
             display:flex;
             padding: 50px;
+            width:89%;
+            height: 70vh;
+            background-color: #F4F4F4;
+            border-radius: 10px;
+            
         }
         .contact-page{
             width: 400px;
@@ -462,18 +471,20 @@
             
             
             flex-wrap: wrap;
+            gap: 20px;
         }
         .personal-info li{
             list-style: none;
-            gap:10px;
-            padding: 30px;
+            
+            
 
         }
         .personal-info input[type="text"],
         .personal-info input[type="tel"],
         .personal-info input[type="email"], 
         .personal-info input[type="text"]{
-            width: 200px;
+            width: 250px;
+            height:40px;
             padding: 12px;
             margin: 10px 0;
             border: 1px solid gray;
@@ -483,9 +494,10 @@
             
         }
         .message input[type="text"]{
-            width: 200px;
-            padding: 12px;
-            margin: 10px 0;
+            width: 86%;
+            height: 90px;
+            padding: 10px;
+            
             border: 1px solid gray;
             border-radius: 10px;
             border-bottom: 2px solid #ccc;
@@ -493,12 +505,108 @@
 
         }
         .message{
-            padding: 30px;
-            margin-left:50px;
-            width: 100%;
-            height: 100px;
+            margin-top:40px;
+            margin-left: 45px;
+            
+            
         }
-     
+        .btn{
+            padding:40px;
+            margin-left:20px;
+        }
+        .cont{
+            margin-top: 100px;
+        }
+        .quick-link{
+            display:flex;
+            padding: 50px;
+            width:91%;
+            height: 70vh;
+            background-color: #F4F4F4;
+            
+        }
+        .conclude p{
+            color:black;
+            font-size: 40px;
+            margin-top: 100px;
+            margin-left:0;
+            margin-bottom:50px;
+        }
+        .conclude{
+            width:400px;
+        }
+        .conclude input[type=email]{
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .ql{
+            width: 300px;
+        }
+        .ql h4{
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;;
+        }
+        .end-contact{
+            width:400px;
+        }
+        .quick li{
+            list-style: none;
+            font-size:20px;
+            padding:20px;
+            text-align: center;
+
+        }
+        .quick li a{
+            text-decoration: none;
+            color: black;
+        }
+        .quick li a:hover{
+            text-decoration: underline;
+            color:#FF014F;
+        }
+        .end-contact h5{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .end-cont li{
+            list-style: none;
+            font-size:20px;
+            padding:20px;
+            text-align: center;
+        }
+        .sm li{
+            list-style: none;
+            
+            display: inline-flex;
+            
+            gap: 10px;
+            margin: 0 10px;
+            margin-bottom:20px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            justify-content: center;
+            align-items: center;
+
+            background-color: gray;
+
+        }
+
+        .sm li:hover {
+            transition-duration: 1s;
+            background-color: #FF014F;
+            color: white;
+        }
+        
         
 
     </style>
@@ -527,7 +635,7 @@
                     <li><summary><a href="#clients"><i class="fa-regular fa-user"></i>Clients</a></summary></li>
                     <li><summary><a href="#price"><i class="fa-solid fa-cart-shopping"></i>Pricing</a></summary></li>
                     <li><summary><a href="#blog-box"><i class="fa-solid fa-image"></i>Blog</a></summary></li>
-                    <li><summary><a href=""><i class="fa-solid fa-comment"></i>Contact</a></summary></li>
+                    <li><summary><a href="#contact"><i class="fa-solid fa-comment"></i>Contact</a></summary></li>
                 </ul>
             </div>
             <hr>
@@ -788,7 +896,7 @@
 
             <!-- this is the contact section  -->
              
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="contact-page">
                     <p style="color:#FF014F"><b>GET IN TOUCH</b></p>
                     <h3>Elevate your brand with Me</h3>
@@ -813,7 +921,42 @@
                         <div class="message">
                             <input type="text" placeholder="your message" />
                         </div>
+                        <div class="btn">
+                            <button style="width: 95%">Appointment Now <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </form>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="quick-link">
+                    <div class="conclude">
+                        <p><strong>Get Ready</strong> To Create <br> Great</p>
+                        <input type="text" placeholder="Email Address">
+                    </div>
+                    <div class="ql">
+                        <h4>Quick Link</h4>
+                        <ul class="quick">
+                            <li><a href="">About Me</a> </li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Pricing </a></li>
+                            <li> <a href=""> Blog Post</a></li>
+                            <li><a href="">Contact Me</a></li>
+                        </ul>
+                    </div>
+                    <div class="end-contact">
+                        <h5>Contact</h5>
+                        <ul class="end-cont">
+                            <li><a href="">example@gmail.com</a></li>
+                            <li>3891 Ranchview Dr. Richardson</li>
+                            <li><a href="">015512345</a></li>
+                        </ul>
+                        <ul class="sm">   <!-- sm=social media  -->
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
